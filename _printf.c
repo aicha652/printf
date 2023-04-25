@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 				}
 				else if (format[i] == 'd' || format[i] == 'i')
 				{
-					sz = sz + print_int(va_arg(args, int));
+					sz = print_int(va_arg(args, int));
 				}
 				else if (format[i] == 'b')
 					sz = print_bin(va_arg(args,unsigned int));
