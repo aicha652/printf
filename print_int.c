@@ -21,7 +21,7 @@ int print_int(int n)
 
 	if (i != 0)
 	{
-		print_int(i);
+		j = print_int(i);
 	}
 	if (i == 0)
 	{
