@@ -41,10 +41,10 @@ int _printf(const char *format, ...)
 				}
 				else if (format[i] == 'd' || format[i] == 'i')
 				{
-					sz = print_int(va_arg(args, int));
+					sz = sz + print_int(va_arg(args, int), 0);
 				}
 				else if (format[i] == 'b')
-					sz = print_bin(va_arg(args,unsigned int));
+					sz = sz + print_bin(va_arg(args,unsigned int));
 			}
 		}
 	va_end(args);

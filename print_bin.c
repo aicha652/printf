@@ -17,6 +17,6 @@ int print_bin(unsigned int n)
 		p = p * 10;
 		n = n / 2;
 	}
-	sz = print_int(b);
+	sz = print_int(b, 0);
 	return (sz);
 }
