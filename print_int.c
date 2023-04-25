@@ -21,13 +21,13 @@ int print_int(int n)
 
 	if (i != 0)
 	{
-		j++;
 		print_int(i);
 	}
 	if (i == 0)
 	{
 		j++;
 	}
+
 	_putchar((unsigned int) n % 10 + '0');
 
 	return (j);
