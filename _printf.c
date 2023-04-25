@@ -43,6 +43,8 @@ int _printf(const char *format, ...)
 				{
 					sz = sz + print_int(va_arg(args, int));
 				}
+				else if (format[i] == 'b')
+					sz = print_bin(va_arg(args,unsigned int));
 			}
 		}
 	va_end(args);
