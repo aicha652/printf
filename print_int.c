@@ -16,9 +16,7 @@ int print_int(int n, int j )
 		_putchar('-');
 		j++;
 	}
-
 	i = i / 10;
-
 	if (i != 0)
 	{
 		j = j + print_int(i, j);
@@ -27,7 +25,6 @@ int print_int(int n, int j )
 	{
 		j++;
 	}
-
-	_putchar((unsigned int) n % 10 + '0');
+	_putchar((n % 10) + '0');
 	return (j);
 }
